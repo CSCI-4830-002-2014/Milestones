@@ -5,7 +5,7 @@
 this is temporary - i'll change it when my group gets a repo set up
 
 ## Milestone Number
-[1]
+[1] & [2]
 
 ## Who Worked on this submission?
 * Michael Aaron
@@ -17,6 +17,11 @@ had a very high level of success with the files I have attempted to use thus far
 * I fixed the broken speech recognition library at https://github.com/Uberi/speech_recognition/pull/16
 * I wrote a short bash script that takes arbitrarily lengthed wav files and cuts them up in 29 second chunks
 * I write to a text file in the style ryan and I had agreed upon
+
+MileStone 2 - 
+* Started working with CMU's Sphinx library, incase local analysis becomes a nessecity
+* Tested with some personal recordings - it works with good accuracy for clear audio, it is hard to say
+how it will work in the lobby.
 
 
 ## Code and Screenshots

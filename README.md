@@ -1,21 +1,22 @@
 # Milestone Template
 
 ## Which Project?
-[url to your project's github page](http://www.github.com)
+This will be the team's github page, but I haven't yet put my code up there. I'll update this today with another URL to a repo with code for the visualization
+[url to your project's github page](https://github.com/LoganBates/TeamKickass)
 
 ## Milestone Number
-[1,2,3, or 4]
+1
 
 ## Who Worked on this submission?
-* Johnny Mnemonic
-* Samuel Jackson
+* Irfan Nadiadi
 
 ## Describe what you're submitting
-[Give an explanation of what work you've submitted and how it fits into the progress of your project]
+I've found a really good [D3 Word Cloud generator](https://github.com/jasondavies/d3-cloud), and I have it working locally. I'm trying to adapt it now to support AJAX requests to get data, but I've run into some CORS problems. It shouldn't take too long to fix, I just need to tinker with it a little more.
 
 ## Code and Screenshots
-[Please link in relevant code and screenshots of functionality including a short explanation]
-* [code link](www.code.org) --> This is the d3 code I wrote for the visualization we want to use
-* ![screenshot](www.example.com) ---> This is a photo of our working microhpone prototype.
+Will update this afternoon with code/screenshots. I need to consolidate all the files into a repo.
+
+* [code link](wordCloud/driver.js) --> This is the d3 code for the visualization we want to use. I'm adapting the code I found from the repo linked above.
+* ![screenshot](wordCloud/screenshot.png) ---> This is a screenshot of the visualization in action.
 * 
 

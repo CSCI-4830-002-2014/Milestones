@@ -1,7 +1,7 @@
 # Milestone Template
 
 ## Which Project?
-[url to your project's github page](https://github.com/atlastrafficmonitor)
+[Traffic Monitor](https://github.com/atlastrafficmonitor)
 
 ## Milestone Number
 1 and 2

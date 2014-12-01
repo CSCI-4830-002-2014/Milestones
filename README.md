@@ -37,4 +37,6 @@ Milestone 2:
 
 * [Server Application](https://github.com/atlastrafficmonitor/atlas-traffic-server) --> As described above - communicates with client app through websockets and sends notification each second.
 
+* [Messing with Effects (Not worth trying out yet)](https://github.com/atlastrafficmonitor/atlas-traffic-client/tree/effects) --> This is Brian trying to make the sound pretty - right now it's not working but I've spent quite a bit of time trying to get it there so I figured I'd include this branch.
+
 * Audio based application = no screenshots.

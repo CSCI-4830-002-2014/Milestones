@@ -9,6 +9,7 @@
 ## Who Worked on this submission?
 * Brian Newsom
 * Ian Ker-Seymer
+* Adrian Chen
 
 ## Describe what you're submitting
 This submission includes the work by Brian and Ian towards the sound component of our project submission.
@@ -23,6 +24,16 @@ For milestone 2 we:
 * Setup a server side Python application to be run on the RPi.  Since we don't have any hardware capabilities organized yet, we set this up as the interface - when we get information that someone has walked through the door, the application can send a websocket notification to the client application and play a noise.
 
 * The noises are still sad - I've been working on this quite a bit but I've been struggling to make it work.  The library is not incredibly well documented.
+
+For the hardware component, Adrian took the hardware with him over break and worked on Milestones 1 and 2.
+
+Milestone 1:
+* The hardware setup was completed, including setting up the raspberry pi.
+* Had a basic code skeleton to check whether the sensors were functional.
+
+Milestone 2:
+* Wrote code for a basic counter to count the number of times the IR signal is interrupted. I would like to set this up on a larger scale, but did not have the means to do so over break.
+* No screenshots as it was all performed on the arduino
 
 ## Code and Screenshots
 

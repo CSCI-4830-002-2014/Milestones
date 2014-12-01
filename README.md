@@ -17,6 +17,6 @@ I've found a really good [D3 Word Cloud generator](https://github.com/jasondavie
 Will update this afternoon with code/screenshots. I need to consolidate all the files into a repo.
 
 * [code link](wordCloud/driver.js) --> This is the d3 code for the visualization we want to use. I'm adapting the code I found from the repo linked above.
-* ![screenshot](wordcloud/screenshot.png) ---> This is a screenshot of the visualization in action.
+* ![screenshot](wordCloud/screenshot.png) ---> This is a screenshot of the visualization in action.
 * 
 

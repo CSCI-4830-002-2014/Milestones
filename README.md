@@ -25,5 +25,5 @@ Milestone 2 is done, the device has so far pushed 280 MB of sample data to a mon
 ## Code and Screenshots
 * [code link](https://github.com/dawsonbotsford/soundvisualizer/tree/master/noiserecorder) --> This is the source code for the noise recorder running on the Raspberry Pi. Documentation of format and brief explanation of how the code works is provided in the README.md.
 * ![screenshot](mongodb.png) --> This is a screenshot of mongodb queries.
-* ![photo](photo.jpg) --> Image of hardware setup.
+* ![photo](image.jpg) --> Image of hardware setup.
 

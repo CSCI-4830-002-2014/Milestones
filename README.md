@@ -16,11 +16,11 @@
 Hardware 1 and 2 done
 
 ## Describe what you're submitting
-Submitting link to source code for the software that will run on the Raspberry Pi. In it's current state the code will collect samples from three microphones and push to a mongodb server each other second.
+Submitting link to source code for the software that will run on the Raspberry Pi. In its current state the code will collect samples from three microphones and push to a mongodb server each other second.
 
 Milestone 1 is done, except for that the microphones we will use in the final installation is not soldered or tested.
 
-Milestone 2 is done, the device has so far pushed 280 MB of sample data to a mongodb sever. (Ask me if you want the credentials.) Screenshots of sample queries are provided.
+Milestone 2 is done, the device has so far pushed 554917 samples (280 MB) to a mongodb sever. (Ask me if you want the credentials.) Screenshots of sample queries are provided.
 
 ## Code and Screenshots
 * [code link](https://github.com/dawsonbotsford/soundvisualizer/tree/master/noiserecorder) --> This is the source code for the noise recorder running on the Raspberry Pi. Documentation of format and brief explanation of how the code works is provided in the README.md.

@@ -1,8 +1,10 @@
 
 var express = require('express');
-var bodyParser = require('./rawBodyParser.js');
+//var bodyParser = require('./rawBodyParser.js');
+var bodyParser = require('body-parser');
 var dataAccess = require('./dataAccess.js');
 var linq = require('node-linq').LINQ;
+var urlHelper = require('url');
 
 var app = express();
 
@@ -10,7 +12,8 @@ function startServer()
 {
 
 	app.set('port', (process.env.PORT || 5000));
-	app.use(bodyParser.RawParser)
+	//app.use(bodyParser.RawParser)
+	app.use(bodyParser.json());
 	app.use(express.static(__dirname + '/'))
 
 	app.listen(app.get('port'), function() 
@@ -26,10 +29,18 @@ function clone(object) {
 	return JSON.parse(JSON.stringify(object));
 }
 
-app.get("/audio", function(request, response) {
+function toModel(object) {
 
-	dataAccess.getAllWords( function (error, docs) {
+	var model = clone(object);
+	delete model._id;
+	return model;
+}
 
+app.get('/words/top', function(request, response) {
+
+	var query = urlHelper.parse(request.url, true).query;
+
+	dataAccess.getTopWords( parseInt(query.max), function (error, docs) {
 			
 		if(error != null)
 		{
@@ -37,11 +48,7 @@ app.get("/audio", function(request, response) {
 			return;
 		}
 
-		var result = new linq(docs).Select(function(x) {
-			var model = clone(x);
-			delete model._id;
-			return model;
-		} ).ToArray();
+		var result = new linq(docs).Select(toModel).ToArray();
 
 		response.send(result);
 
@@ -49,26 +56,29 @@ app.get("/audio", function(request, response) {
 
 });
 
-app.get("/audio/:word", function(request, response) {
+app.get('/words/recent', function(request, response) {
 
-	dataAccess.getWordInfo(request.param("word"), function(error, doc) {
+	var query = urlHelper.parse(request.url, true).query;
 
-		if(doc == null) {
-			response.status(404).send({"msg":"Not Found"});
+	dataAccess.getRecentWords( parseInt(query.max), parseInt(query.period), function (error, docs) {
+			
+		if(error != null)
+		{
+			response.send( "bad request" );
 			return;
 		}
-		
-		var model = clone(doc);
-		delete model._id;
-		response.send( model );
+
+		var result = new linq(docs).Select(toModel).ToArray();
+
+		response.send(result);
 
 	});
 
 });
 
-app.post("/audio", function(request, response) {
+app.post("/words", function(request, response) {
 
-	dataAccess.addWords( [ {word:"peyman", count: 1}, {word:"kate",count:2} ] );
-	response.send(request.body);
+	dataAccess.addWords( request.body );
+	response.send("");
 
 });

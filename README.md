@@ -1,21 +1,29 @@
-# Milestone Template
+# Milestone Templates
 
 ## Which Project?
-[url to your project's github page](http://www.github.com)
+[sound visualizer](https://github.com/dawsonbotsford/soundvisualizer)
 
 ## Milestone Number
-[1,2,3, or 4]
+1
 
 ## Who Worked on this submission?
-* Johnny Mnemonic
-* Samuel Jackson
+* Dawson Botsford
 
 ## Describe what you're submitting
-[Give an explanation of what work you've submitted and how it fits into the progress of your project]
+Unformatted visualization with no data. Just to test and make sure that the heatmap module is up and working with no input data. Up next is formatting for the useful 1 week/hourly timeframe
 
 ## Code and Screenshots
-[Please link in relevant code and screenshots of functionality including a short explanation]
-* [code link](www.code.org) --> This is the d3 code I wrote for the visualization we want to use
-* ![screenshot](www.example.com) ---> This is a photo of our working microhpone prototype.
+* [code link](https://github.com/dawsonbotsford/soundvisualizer/blob/master/calendar/tests/calendar.html) --> This is the d3 code I wrote for the visualization we want to use
+* ![screenshot](http://i.imgur.com/UNbiXKO.png)
 * 
+
+## Milestone Number
+2
+
+## Describe what you're submitting
+JsFiddle code for the formatted calendar heatmap to be used in the final product. No example data exists yet in the vis. Solely the formatting
+
+## Code and Screenshots
+[JSFiddle link here](http://jsfiddle.net/nnpyr3t7/)
+
 

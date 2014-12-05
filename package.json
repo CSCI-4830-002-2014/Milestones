@@ -1,0 +1,16 @@
+{
+  "name": "bigData",
+  "main":"main.js",
+  "scripts": {
+  	"start" : "node main.js"
+  },
+  "dependencies": {
+    "express": "*",
+    "body-parser": "*",
+    "node-linq": "*",
+    "mongojs": "*"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  }
+}

@@ -1,0 +1,5 @@
+{
+	"database" : {
+		"connectionString":"mongodb://audio:audio@ds053320.mongolab.com:53320/audio"
+	}
+}
